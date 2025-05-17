@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        #index-card{
+            width:5in;
+            height:8in;
+            border:1px solid black;
+            padding: 2mm 3mm 0;
+            position:relative;
+        }
+        #printer-dead-space{
+            width:calc(5in - 6mm);
+            height:0.5in;
+            background:black;
+            position:absolute;
+            bottom:0;
+        }
+        .item{
+            margin-bottom: 7px;
+        }
+        .name{
+            font-weight: 900;
+        }
+        .allergies{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <div id="index-card">
+        <div class="item"><div class="name">organic pear salad</div>
+        <div class="description">mixed lettuce, pears, tomato confit, pistachio, lotus root chips, white balsamic vinaigrette</div>
+        <div class="allergies">nuts, can be made vegan</div></div>
+
+        <div class="item"><div class="name">spanish octopus</div>
+        <div class="description">cauliflower-potato purée, potato, sriracha aioli, potato foam, extra virgin olive oil, paprika</div>
+        <div class="allergies">dairy</div></div>
+
+        <div class="item"><div class="name">berkshire pork cheeks</div>
+        <div class="description">artichokes, tomato, carrots, bacon-potato purée, rioja-pork jus</div>
+        <div class="allergies">dairy</div></div>
+
+        <div class="item"><div class="name">mushrooms & polenta</div>
+        <div class="description">creamy polenta, wild mushroom ragout(maitake, brown beech, shitake, oyster), quail egg, parmesan cheese foam, hazelnuts, truffle zest</div>
+        <div class="allergies">DAIRY, nuts</div></div>
+
+        <div class="item"><div class="name">mediterranean sea bass</div>
+        <div class="description">skin-on fillet, salsa verde, local mushrooms(shitake, porcini, oyster), pearl onions, cauliflower soubise, tomato, judiones de la granja white beans</div>
+        <div class="allergies">gluten, dairy</div></div>
+
+        <div class="item"><div class="name">shellfish chowder</div>
+        <div class="description">manila clams, shrimp, bay scallop, fingerling potatoes, celery, fresh corn, light seafood chowder</div>
+        <div class="allergies">DAIRY</div></div>
+<hr>
+        <div class="item"><div class="name">lemon pie</div>
+        <div class="description">pineapple ice cream, meringue, passion fruit curd</div>
+        <div class="allergies">DAIRY, GLUTEN</div></div>
+
+        <div class="item"><div class="name">chocolate & coffee</div>
+        <div class="description">coffee ice cream, chocolate mousse, chocolate-almond financier, hazelnut brittle, nougatine</div>
+        <div class="allergies">DAIRY, NUTS</div></div>
+
+        <div class="item"><div class="name">pavlova</div>
+        <div class="description">lime-sherry vinegar crunchy meringue, crème brûlée ice cream, strawberry tartare, berry compote, hazelnut brittle</div>
+        <div class="allergies">DAIRY, nuts</div></div>
+
+        <div id="printer-dead-space"></div>
+    </div>
+</body>
+</html>
